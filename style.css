@@ -1,0 +1,37 @@
+.item1 {
+  grid-area: header;
+  background-color: blue;
+}
+
+.item2 {
+  grid-area: menu;
+  background-color: darkorchid;
+}
+
+.item3 {
+  grid-area: main;
+  background: url("./pexels-lywin-55237728-17187205.jpg");
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.item4 {
+  grid-area: aside;
+  background-color: deeppink;
+}
+
+.item5 {
+  grid-area: footer;
+  background-color: gold;
+}
+
+.grid-container {
+  height: 100vh;
+  display: grid;
+  grid-template-areas:
+    "header header header header header header"
+    "menu main main main aside aside"
+    "menu footer footer footer footer footer";
+}
